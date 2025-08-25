@@ -26,7 +26,7 @@ pc = Pinecone(api_key=pinecone_api_key)
 
 
 
-index_name = "medical-chatbot"  # change if desired
+index_name = "ai-chatbot"  # change if desired
 
 if not pc.has_index(index_name):
     pc.create_index(
@@ -44,3 +44,4 @@ docsearch = PineconeVectorStore.from_documents(
     index_name=index_name,
     embedding=embeddings, 
 ) 
+

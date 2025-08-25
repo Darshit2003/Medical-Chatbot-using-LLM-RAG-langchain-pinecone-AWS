@@ -25,7 +25,7 @@ os.environ["COHERE_API_KEY"] = COHERE_API_KEY
 
 embeddings = download_hugging_face_embeddings()
 
-index_name = "medical-chatbot" 
+index_name = "ai-chatbot" 
 # Embed each chunk and upsert the embeddings into your Pinecone index.
 docsearch = PineconeVectorStore.from_existing_index(
     index_name=index_name,
